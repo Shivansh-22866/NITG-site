@@ -4,6 +4,7 @@ import Carousel from '../components/Carousel/Carousel'
 import {Card, CardBody, CardHeader, CardFooter, Divider} from "@nextui-org/react";
 import EventCard from '../components/EventCard';
 import HomePageEvents from '../components/HomePageEvents';
+import PNTCarousel from '../components/PNTCarousel/PNTCarousel';
 
 const HomePage = () => {
   return (
@@ -57,6 +58,10 @@ const HomePage = () => {
 
 
         <HomePageEvents/>
+
+        <div className='lg:block hidden'>
+          <PNTCarousel/>
+        </div>
     </>
   )
 }

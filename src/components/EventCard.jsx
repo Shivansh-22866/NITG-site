@@ -5,7 +5,7 @@ import { Card, CardBody, CardHeader, CardFooter } from '@nextui-org/react';
 
 const EventCard = ({ title, paragraphs, link }) => (
   <Card className="w-1/3">
-    <CardHeader className="justify-center my-4">
+    <CardHeader className="justify-center my-4 z-0">
       <div className="flex flex-col gap-1 items-center justify-center">
         <h1 className="font-semibold leading-none text-center text-3xl">{title}</h1>
       </div>
