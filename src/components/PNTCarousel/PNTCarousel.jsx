@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import StackedBarChart from '../StackedBarChart';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -13,6 +14,11 @@ import './styles.css';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 export default function PNTCarousel() {
+  const chartData = {
+    labels: ['UG 2019', 'UG 2020', 'UG 2021', 'UG 2022', 'UG 2023', 'UG 2024'], // Example column labels
+    averageLPAs: [3, 7, 4, 4, 3, 5], // Example average LPAs
+    highestLPAs: [2, 3, 3, 1, 3, 4], // Example highest LPAs
+  };
   return (
     <>
       <Swiper
@@ -24,17 +30,19 @@ export default function PNTCarousel() {
           rotate: 0,
           stretch: 0,
           depth: 400,
-          modifier: 2.5,
+          modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
+        pagination={false}
         modules={[EffectCoverflow, Pagination]}
       >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        <SwiperSlide className='flex flex-col justify-end items-start'>
+          <div>Placement Statistics</div>
+          <StackedBarChart data={chartData} height={300} width={550}/>
         </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        <SwiperSlide className='flex flex-col justify-end items-start'>
+          <div>Bi-Annual Newsletter</div>
+          <img src="/synapse_newsletter.png"/>
         </SwiperSlide>
         <SwiperSlide>
           <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
