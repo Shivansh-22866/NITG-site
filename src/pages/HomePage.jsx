@@ -2,11 +2,18 @@ import React from 'react'
 import { FaInfoCircle, FaArrowRight, FaLink } from 'react-icons/fa'
 import Carousel from '../components/Carousel/Carousel'
 import {Card, CardBody, CardHeader, CardFooter, Divider} from "@nextui-org/react";
-import EventCard from '../components/EventCard';
 import HomePageEvents from '../components/HomePageEvents';
 import PNTCarousel from '../components/PNTCarousel/PNTCarousel';
+import StackedBarChart from '../components/StackedBarChart';
 
 const HomePage = () => {
+
+  const chartData = {
+    labels: ['UG 2019', 'UG 2020', 'UG 2021', 'UG 2022', 'UG 2023', 'UG 2024'], // Example column labels
+    averageLPAs: [3, 7, 4, 4, 3, 5], // Example average LPAs
+    highestLPAs: [2, 3, 3, 1, 3, 4], // Example highest LPAs
+  };
+
   return (
     <>
         {/* Main Carousel for  */}
@@ -59,9 +66,11 @@ const HomePage = () => {
 
         <HomePageEvents/>
 
-        <div className='lg:block hidden'>
+        <div className='xl:block hidden my-8'>
           <PNTCarousel/>
         </div>
+
+        <StackedBarChart data={chartData} />
     </>
   )
 }
