@@ -1,0 +1,25 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+
+  @media (min-width: 1025px) {
+    .swiper-slide {
+      padding-top: 35.25%; /* Maintain aspect ratio on large screens */
+    }
+  }
+  
+  .swiper-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+  }
