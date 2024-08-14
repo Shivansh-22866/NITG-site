@@ -36,7 +36,7 @@ const HomePageEvents = () => {
         link="#"
       />
     </div>
-    <div>
+    <div className='lg:hidden'>
       <div className='w-full my-4'>
         <div className='px-8 py-4 flex flex-row items-center gap-4'>
           <Divider orientation='vertical' className='py-4 w-1 bg-black'/>
@@ -110,7 +110,7 @@ const HomePageEvents = () => {
           </Card>
         </div>
         <div className='flex justify-center'>
-          <Button color='primary'>
+          <Button color='primary' variant='ghost' className='text-white'>
             More
           </Button>
         </div>

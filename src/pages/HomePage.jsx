@@ -64,6 +64,30 @@ const HomePage = () => {
           <PNTCarousel/>
         </div>
 
+        <div className='bg-blue-700 text-white p-8 grid grid-cols-5 text-xs sm:text-xl'>
+
+          <div className='flex flex-col'>
+            <span>911</span>
+            <span>Students</span>
+          </div>
+          <div className='flex flex-col'>
+            <span>55</span>
+            <span>Faculty</span>
+          </div>
+          <div className='flex flex-col'>
+            <span>7</span>
+            <span>Departments</span>
+          </div>
+          <div className='flex flex-col'>
+            <span>1611</span>
+            <span>Publications</span>
+          </div>
+          <div className='flex flex-col'>
+            <span>18</span>
+            <span>Patents</span>
+          </div>
+
+        </div>
     </>
   )
 }
