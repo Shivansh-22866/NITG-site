@@ -1,5 +1,8 @@
 import React from 'react'
-import { FaInfoCircle } from 'react-icons/fa'
+import { FaInfoCircle, FaGraduationCap } from 'react-icons/fa'
+import { MdGroups2, MdBook } from 'react-icons/md';
+import { BsBuildingGear } from 'react-icons/bs';
+import { PiCertificate } from 'react-icons/pi';
 import Carousel from '../components/Carousel/Carousel'
 import {Card, CardBody, Divider, Image, Tabs, Tab} from "@nextui-org/react";
 import HomePageEvents from '../components/HomePageEvents';
@@ -135,24 +138,29 @@ const HomePage = () => {
 
         <div className='bg-blue-700 text-white p-8 grid grid-cols-5 text-xs sm:text-xl'>
 
-        <div className='flex flex-col'>
-          <span>911</span>
+        <div className='flex flex-col items-center justify-center gap-4'>
+          <FaGraduationCap className='text-9xl'/>
+          <span className='text-9xl'>911</span>
           <span>Students</span>
         </div>
-        <div className='flex flex-col'>
-          <span>55</span>
+        <div className='flex flex-col items-center justify-center gap-4'>
+          <MdGroups2 className='text-9xl'/>
+          <span className='text-9xl'>55</span>
           <span>Faculty</span>
         </div>
-        <div className='flex flex-col'>
-          <span>7</span>
+        <div className='flex flex-col items-center justify-center gap-4'>
+          <BsBuildingGear className='text-9xl'/>
+          <span className='text-9xl'>7</span>
           <span>Departments</span>
         </div>
-        <div className='flex flex-col'>
-          <span>1611</span>
+        <div className='flex flex-col items-center justify-center gap-4'>
+          <MdBook className='text-9xl'/>
+          <span className='text-9xl'>1611</span>
           <span>Publications</span>
         </div>
-        <div className='flex flex-col'>
-          <span>18</span>
+        <div className='flex flex-col items-center justify-center gap-4'>
+          <PiCertificate className='text-9xl'/>
+          <span className='text-9xl'>18</span>
           <span>Patents</span>
         </div>
 
