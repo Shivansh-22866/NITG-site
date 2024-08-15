@@ -110,7 +110,7 @@ const HomePageEvents = () => {
           </Card>
         </div>
         <div className='flex justify-center'>
-          <Button color='primary' variant='ghost' className='text-white'>
+          <Button color='primary' variant='ghost' className='text-white border-white'>
             More
           </Button>
         </div>

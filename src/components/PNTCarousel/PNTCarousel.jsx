@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 import './styles.css';
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Navigation } from 'swiper/modules';
 
 export default function PNTCarousel() {
   const chartData = {
@@ -29,12 +29,12 @@ export default function PNTCarousel() {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 400,
+          depth: 200,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }}
-        pagination={false}
-        modules={[EffectCoverflow, Pagination]}
+        navigation={true}
+        modules={[EffectCoverflow, Navigation]}
       >
         <SwiperSlide className='flex flex-col justify-end items-start'>
           <div>Placement Statistics</div>
