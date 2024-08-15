@@ -110,17 +110,17 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className='w-full flex flex-row my-32'>
+        <div className='w-full flex-row my-32 hidden lg:flex'>
           <div className='flex flex-col items-center justify-center w-2/3'>
             <h1 className='text-3xl font-bold my-4'>National Portals</h1>
 
             <div className='grid grid-cols-2 grid-rows-3 gap-8'>
-              <Image src='/natpor1.png' className='border-4 rounded-xl object-cover' width={300} height={200}/>
-              <Image src='/natpor2.png' className='border-4 rounded-xl object-cover' width={300} height={200}/>
-              <Image src='/natpor3.png' className='border-4 rounded-xl object-cover' width={300} height={200}/>
-              <Image src='/natpor4.png' className='border-4 rounded-xl object-cover' width={300} height={200}/>
-              <Image src='/natpor5.png' className='border-4 rounded-xl object-cover' width={300} height={200}/>
-              <Image src='/natpor6.png' className='border-4 rounded-xl object-cover' width={300} height={200}/>
+              <Image src='/natpor1.png' className='border-4 rounded-xl object-cover z-0' width={300} height={200}/>
+              <Image src='/natpor2.png' className='border-4 rounded-xl object-cover z-0' width={300} height={200}/>
+              <Image src='/natpor3.png' className='border-4 rounded-xl object-cover z-0' width={300} height={200}/>
+              <Image src='/natpor4.png' className='border-4 rounded-xl object-cover z-0' width={300} height={200}/>
+              <Image src='/natpor5.png' className='border-4 rounded-xl object-cover z-0' width={300} height={200}/>
+              <Image src='/natpor6.png' className='border-4 rounded-xl object-cover z-0' width={300} height={200}/>
             </div>
 
           </div>

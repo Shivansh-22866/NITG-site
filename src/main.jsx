@@ -5,6 +5,7 @@ import App from './App.jsx'
 import './index.css'
 import CustomNavbar from './components/CustomNavbar.jsx';
 import MenuNavbar from './components/MenuNavbar.jsx';
+import Footer from './components/Footer.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -12,6 +13,7 @@ createRoot(document.getElementById('root')).render(
       <CustomNavbar/>
       <MenuNavbar/>
       <App />
+      <Footer/>
     </NextUIProvider>
   </StrictMode>,
 )
