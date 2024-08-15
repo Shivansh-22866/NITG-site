@@ -2,7 +2,7 @@ import { Button, Dropdown, DropdownMenu, DropdownItem, DropdownTrigger, Navbar }
 
 const MenuNavbar = () => {
   return (
-    <nav className="p-4 sticky top-0 z-10 bg-white">
+    <nav className="p-4 sticky top-0 z-20 bg-white">
       <ul className="flex flex-wrap justify-center sm:gap-2 text-white">
         {/* For large screens */}
         <li className="hidden md:flex">

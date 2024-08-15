@@ -19,7 +19,7 @@ const Footer = () => {
             <li><a href='#'className='flex flex-row items-center'><FaAngleRight/>Dissertation Formats</a></li>
         </ul>
         <h1 className='text-3xl font-bold'>Contact Us</h1>
-        <div className='flex flex-row justify-between items-center'>
+        <div className='flex flex-col justify-between items-start sm:flex-row sm:items-center'>
             <div className='p-8 flex flex-col'>
                 <span>National Institute of Technology Goa</span>
                 <span>Kottamoll Plateau, Cuncolim Municipal Area,</span>
