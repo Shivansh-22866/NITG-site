@@ -1,4 +1,4 @@
-import { Button, Dropdown, DropdownMenu, DropdownItem, DropdownTrigger, Navbar } from '@nextui-org/react';
+import { Button, Dropdown, DropdownMenu, DropdownItem, DropdownTrigger, Link } from '@nextui-org/react';
 
 const MenuNavbar = () => {
   return (
@@ -6,7 +6,9 @@ const MenuNavbar = () => {
       <ul className="flex flex-wrap justify-center sm:gap-2 text-white">
         {/* For large screens */}
         <li className="hidden md:flex">
-          <Button variant='light' href='#'>Home</Button>
+          <Button variant='light' as={Link} href="/">
+            Home
+          </Button>
         </li>
         <li className="hidden md:flex">
           <Dropdown>
@@ -29,7 +31,15 @@ const MenuNavbar = () => {
           <Button variant='light'>Training & Placements</Button>
         </li>
         <li className="hidden md:flex">
-          <Button variant='light'>People</Button>
+          <Dropdown>
+            <DropdownTrigger>
+              <Button variant='light'>People</Button>
+            </DropdownTrigger>
+            <DropdownMenu>
+              <DropdownItem key="faculty" href="/people/faculty">Faculty</DropdownItem>
+              <DropdownItem key="admin2">Submenu 2</DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
         </li>
         <li className="hidden md:flex">
           <Button variant='light'>Research</Button>

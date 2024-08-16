@@ -71,43 +71,45 @@ const HomePageEvents = () => {
           <Divider orientation='vertical' className='py-4 w-1 bg-white'/>
           <div className='text-2xl'>News and Events</div>
         </div>
-        <div className='px-8 py-4 text-sm'>
-          <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
-            <Image
-              removeWrapper
-              alt="Card example background"
-              className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-              src="https://nextui.org/images/card-example-6.jpeg"
-            />
-            <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
-              <div>
-                <p className="font-bold text-white">14th August 2024</p>
-                <p className="text-white">Lorem Ipsum adit solor amit</p>
-              </div>
-              <Button className="text-tiny" color="primary" radius="full" size="sm">
-                More
-              </Button>
-            </CardFooter>
-          </Card>
-        </div>
-        <div className='px-8 py-4 text-sm'>
-          <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
-            <Image
-              removeWrapper
-              alt="Card example background"
-              className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
-              src="https://nextui.org/images/card-example-6.jpeg"
-            />
-            <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
-              <div>
-                <p className="font-bold text-white">14th August 2024</p>
-                <p className="text-white">Lorem Ipsum adit solor amit</p>
-              </div>
-              <Button className="text-tiny" color="primary" radius="full" size="sm">
-                More
-              </Button>
-            </CardFooter>
-          </Card>
+        <div className='flex sm:flex-row flex-col sm:justify-evenly'>
+          <div className='px-8 py-4 text-sm'>
+            <Card isFooterBlurred className="w-full h-[300px] sm:w-80 col-span-12 sm:col-span-5">
+              <Image
+                removeWrapper
+                alt="Card example background"
+                className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+                src="https://nextui.org/images/card-example-6.jpeg"
+              />
+              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+                <div>
+                  <p className="font-bold text-white">14th August 2024</p>
+                  <p className="text-white">Lorem Ipsum adit solor amit</p>
+                </div>
+                <Button className="text-tiny" color="primary" radius="full" size="sm">
+                  More
+                </Button>
+              </CardFooter>
+            </Card>
+          </div>
+          <div className='px-8 py-4 text-sm'>
+            <Card isFooterBlurred className="w-full h-[300px] sm:w-80 col-span-12 sm:col-span-5">
+              <Image
+                removeWrapper
+                alt="Card example background"
+                className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+                src="https://nextui.org/images/card-example-6.jpeg"
+              />
+              <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
+                <div>
+                  <p className="font-bold text-white">14th August 2024</p>
+                  <p className="text-white">Lorem Ipsum adit solor amit</p>
+                </div>
+                <Button className="text-tiny" color="primary" radius="full" size="sm">
+                  More
+                </Button>
+              </CardFooter>
+            </Card>
+          </div>
         </div>
         <div className='flex justify-center'>
           <Button color='primary' variant='ghost' className='text-white border-white'>
