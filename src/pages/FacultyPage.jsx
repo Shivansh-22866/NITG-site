@@ -5,6 +5,7 @@ import { Breadcrumbs, BreadcrumbItem, Dropdown, DropdownMenu, DropdownTrigger, D
  } from '@nextui-org/react'
 import { FaChevronDown } from 'react-icons/fa'
 import FacultyCard from '../components/FacultyCard';
+import CSEFaculties from './CSEFaculties';
 
 const FacultyPage = () => {
 
@@ -288,11 +289,11 @@ const FacultyPage = () => {
             <h2 className='text-3xl'>Academic Departments</h2>
             <Divider className='py-[0.1rem]'/>
             <div className="flex w-full flex-col my-4">
-                <Tabs aria-label="Options" variant='light'>
+                <Tabs aria-label="Options" variant='light' color='primary'>
                     <Tab key="photos" title="Photos">
                     <Card>
                         <CardBody>
-                            <FacultyCard/>
+                          <CSEFaculties/>
                         </CardBody>
                     </Card>  
                     </Tab>
