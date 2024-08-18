@@ -1,9 +1,9 @@
 import React from 'react'
-import FacultyCard from '../components/FacultyCard';
+import FacultyCard from '../../components/FacultyCard';
 
-const EEEFaculties = () => {
+const CVETechnical = () => {
 
-    const professorsData = [
+    const staffData = [
         {
           avatarSrc: "https://www.nitgoa.ac.in/People/frontend/Dr.%20Veena%20Thenkanidiyoor.png",
           name: "Dr. Veena Thenkanidiyoor",
@@ -101,7 +101,7 @@ const EEEFaculties = () => {
 
   return (
     <div className='grid sm:grid-cols-3 grid-cols-1 sm:flex-row gap-8'>
-    {professorsData.map((professor, index) => (
+    {staffData.map((professor, index) => (
         <FacultyCard
           key={index}
           avatarSrc={professor.avatarSrc}
@@ -115,4 +115,4 @@ const EEEFaculties = () => {
   )
 }
 
-export default EEEFaculties
+export default CVETechnical

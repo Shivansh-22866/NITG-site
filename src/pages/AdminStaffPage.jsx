@@ -5,15 +5,9 @@ import { Breadcrumbs, BreadcrumbItem, Dropdown, DropdownMenu, DropdownTrigger, D
  } from '@nextui-org/react'
 import { FaChevronDown } from 'react-icons/fa'
 import FacultyCard from '../components/FacultyCard';
-import CSEFaculties from './FacultyPages/CSEFaculties';
-import ECEFaculties from './FacultyPages/ECEFaculties';
-import EEEFaculties from './FacultyPages/EEEFaculities';
-import MCEFaculties from './FacultyPages/MCEFaculties';
-import CVEFaculties from './FacultyPages/CVEFaculties';
-import APSFaculties from './FacultyPages/APSFaculties';
-import HSSFaculties from './FacultyPages/HSSFaculties';
 
-const FacultyPage = () => {
+
+const AdminStaffPage = () => {
 
     const users = [
         {
@@ -218,6 +212,102 @@ const FacultyPage = () => {
         },
       ];
 
+      const staffData = [
+        {
+          avatarSrc: "https://www.nitgoa.ac.in/People/frontend/Dr.%20Veena%20Thenkanidiyoor.png",
+          name: "Dr. Veena Thenkanidiyoor",
+          profession: "Associate Professor & Head",
+          email: "veenat@nitgoa.ac.in",
+          researchArea: "Deep Learning, Kernel Methods, Pattern Recognition, Applied Machine Learning, Computer Vision, Speech Processing, Weather Data Analysis, Content based Information Retrieval",
+        },
+        {
+          avatarSrc: "https://www.nitgoa.ac.in/People/frontend/Dr.%20Damodar%20Reddy%20Edla.png",
+          name: "Dr. Damodar Reddy Edla",
+          profession: "Associate Professor",
+          email: "dr.reddy@nitgoa.ac.in",
+          researchArea: "Artificial Intelligence; Cognitive Neuroscience; Brain Computer Interface; Medical Imaging; Wireless Sensor Networks; Machine Learning/Deep Learning; Internet of Medical Things (IoMT)",
+        },
+        {
+          avatarSrc: "https://www.nitgoa.ac.in/People/frontend/Dr.%20Purushothama%20B.R",
+          name: "Dr. Purushothama B.R",
+          profession: "Associate Professor (On Lien)",
+          email: "puru@nitgoa.ac.in",
+          researchArea: "Information Security, Cryptography, Cloud Security, Key Management, Security Analytics",
+        },
+        {
+          avatarSrc: "https://www.nitgoa.ac.in/People/frontend/Dr.%20Keshavamurthy%20B.N..png",
+          name: "Dr. Damodar Reddy Edla",
+          profession: "Associate Professor",
+          email: "dr.reddy@nitgoa.ac.in",
+          researchArea: "Artificial Intelligence; Cognitive Neuroscience; Brain Computer Interface; Medical Imaging; Wireless Sensor Networks; Machine Learning/Deep Learning; Internet of Medical Things (IoMT)",
+        },
+        {
+          avatarSrc: "https://www.nitgoa.ac.in/People/frontend/Dr.%20Damodar%20Reddy%20Edla.png",
+          name: "Dr. Keshavamurthy B.N.",
+          profession: "Associate Professor",
+          email: "bnkeshav.fcse@nitgoa.ac.in",
+          researchArea: "Data Mining, Privacy Preserving Data Mining, Stream Data Mining, Social Media Mining.",
+        },
+        {
+          avatarSrc: "https://www.nitgoa.ac.in/People/frontend/Dr.%20S.%20Mini.png",
+          name: "Dr. S. Mini",
+          profession: "Associate Professor",
+          email: "mini@nitgoa.ac.in",
+          researchArea: "Wireless Sensor Networks, Swarm Intelligence, Combinatorial Optimization, Internet of Things",
+        },
+        {
+          avatarSrc: "https://www.nitgoa.ac.in/People/frontend/Dr.%20Damodar%20Reddy%20Edla.png",
+          name: "Dr. Keshavamurthy B.N.",
+          profession: "Associate Professor",
+          email: "bnkeshav.fcse@nitgoa.ac.in",
+          researchArea: "Data Mining, Privacy Preserving Data Mining, Stream Data Mining, Social Media Mining.",
+        },
+        {
+          avatarSrc: "https://www.nitgoa.ac.in/People/frontend/Dr.%20Damodar%20Reddy%20Edla.png",
+          name: "Dr. Keshavamurthy B.N.",
+          profession: "Associate Professor",
+          email: "bnkeshav.fcse@nitgoa.ac.in",
+          researchArea: "Data Mining, Privacy Preserving Data Mining, Stream Data Mining, Social Media Mining.",
+        },
+        {
+          avatarSrc: "https://www.nitgoa.ac.in/People/frontend/Dr.%20Damodar%20Reddy%20Edla.png",
+          name: "Dr. Keshavamurthy B.N.",
+          profession: "Associate Professor",
+          email: "bnkeshav.fcse@nitgoa.ac.in",
+          researchArea: "Data Mining, Privacy Preserving Data Mining, Stream Data Mining, Social Media Mining.",
+        },
+        {
+          avatarSrc: "https://www.nitgoa.ac.in/People/frontend/Dr.%20Damodar%20Reddy%20Edla.png",
+          name: "Dr. Keshavamurthy B.N.",
+          profession: "Associate Professor",
+          email: "bnkeshav.fcse@nitgoa.ac.in",
+          researchArea: "Data Mining, Privacy Preserving Data Mining, Stream Data Mining, Social Media Mining.",
+        },
+        {
+          avatarSrc: "https://www.nitgoa.ac.in/People/frontend/Dr.%20Damodar%20Reddy%20Edla.png",
+          name: "Dr. Keshavamurthy B.N.",
+          profession: "Associate Professor",
+          email: "bnkeshav.fcse@nitgoa.ac.in",
+          researchArea: "Data Mining, Privacy Preserving Data Mining, Stream Data Mining, Social Media Mining.",
+        },
+        {
+          avatarSrc: "https://www.nitgoa.ac.in/People/frontend/Dr.%20Damodar%20Reddy%20Edla.png",
+          name: "Dr. Keshavamurthy B.N.",
+          profession: "Associate Professor",
+          email: "bnkeshav.fcse@nitgoa.ac.in",
+          researchArea: "Data Mining, Privacy Preserving Data Mining, Stream Data Mining, Social Media Mining.",
+        },
+        {
+          avatarSrc: "https://www.nitgoa.ac.in/People/frontend/Dr.%20Damodar%20Reddy%20Edla.png",
+          name: "Dr. Keshavamurthy B.N.",
+          profession: "Associate Professor",
+          email: "bnkeshav.fcse@nitgoa.ac.in",
+          researchArea: "Data Mining, Privacy Preserving Data Mining, Stream Data Mining, Social Media Mining.",
+        },
+
+        // Add more professor objects here
+      ];
+
   return (
     <>
         <div className='sm:h-72 relative bg-blue-700 flex flex-col sm:justify-between justify-evenly'>
@@ -227,23 +317,23 @@ const FacultyPage = () => {
                         <Button variant='light'>Home</Button>
                     </BreadcrumbItem>
                     <BreadcrumbItem>
-                        <Button variant='light'>People</Button>
+                        <Button variant="light">People</Button>
                     </BreadcrumbItem>
                     <BreadcrumbItem>
-                          <Dropdown>
+                        <Dropdown>
                             <DropdownTrigger>
                                 <Button variant='light'
-                                endContent={<FaChevronDown className='text-gray-400'/>}>Faculty</Button>
+                                endContent={<FaChevronDown className='text-gray-400'/>}>Administrative Staff</Button>
                             </DropdownTrigger>
                             <DropdownMenu aria-label="Routes">
-                                <DropdownItem href="/people/technical">
-                                Technical Staff
+                                <DropdownItem href="/people/faculty">
+                                Faculty
                                 </DropdownItem>
                                 <DropdownItem href="/people/admin">
-                                Administrative Staff
+                                Technical Staff
                                 </DropdownItem>
                             </DropdownMenu>
-                          </Dropdown>
+                        </Dropdown>
                     </BreadcrumbItem>
                 </Breadcrumbs>
 
@@ -287,69 +377,30 @@ const FacultyPage = () => {
             </div>
             
             <h1 className='text-6xl text-white p-4 font-bold'>
-                Faculty
+                Administrative Staff
             </h1>
         </div>
 
         <div className='my-4 bg-blue-300 p-4'>
-            <h2 className='text-3xl'>Academic Departments</h2>
-            <Divider className='py-[0.1rem]'/>
-            <div className="flex w-full flex-col my-4">
-                <Tabs aria-label="Options" className='flex justify-center items-center' variant='light' color='primary'>
-                    <Tab key="cse" title="Computer Science & Engineering">
-                    <Card>
-                        <CardBody>
-                          <CSEFaculties/>
-                        </CardBody>
-                    </Card>  
-                    </Tab>
-                    <Tab key="ece" title="Electronics & Communication Engineering">
-                    <Card>
-                        <CardBody>
-                          <ECEFaculties/>
-                        </CardBody>
-                    </Card>  
-                    </Tab>
-                    <Tab key="eee" title="Electrical & Electronics Engineering">
-                    <Card>
-                        <CardBody>
-                          <EEEFaculties/>
-                        </CardBody>
-                    </Card>  
-                    </Tab>
-                    <Tab key="mce" title="Mechanical Engineering">
-                    <Card>
-                        <CardBody>
-                          <MCEFaculties/>
-                        </CardBody>
-                    </Card>  
-                    </Tab>
-                    <Tab key="cve" title="Civil Engineering">
-                    <Card>
-                        <CardBody>
-                          <CVEFaculties/>
-                        </CardBody>
-                    </Card>  
-                    </Tab>
-                    <Tab key="aps" title="Applied Sciences">
-                    <Card>
-                        <CardBody>
-                          <APSFaculties/>
-                        </CardBody>
-                    </Card>  
-                    </Tab>
-                    <Tab key="hss" title="Humanities and Social Sciences">
-                    <Card>
-                        <CardBody>
-                          <HSSFaculties/>
-                        </CardBody>
-                    </Card>  
-                    </Tab>
-                </Tabs>
-            </div> 
+            <Card>
+                <CardBody>
+                    <div className='grid sm:grid-cols-3 grid-cols-1 sm:flex-row gap-8'>
+                    {staffData.map((professor, index) => (
+                        <FacultyCard
+                        key={index}
+                        avatarSrc={professor.avatarSrc}
+                        name={professor.name}
+                        profession={professor.profession}
+                        email={professor.email}
+                        researchArea={professor.researchArea}
+                        />
+                    ))}
+                    </div>
+                </CardBody>
+            </Card>
         </div>
     </>
   )
 }
 
-export default FacultyPage
+export default AdminStaffPage

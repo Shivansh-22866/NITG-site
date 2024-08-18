@@ -1,7 +1,7 @@
 import React from 'react'
-import FacultyCard from '../components/FacultyCard';
+import FacultyCard from '../../components/FacultyCard';
 
-const ECEFaculties = () => {
+const HSSFaculties = () => {
 
     const professorsData = [
         {
@@ -115,4 +115,4 @@ const ECEFaculties = () => {
   )
 }
 
-export default ECEFaculties
+export default HSSFaculties

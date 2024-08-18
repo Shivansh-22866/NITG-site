@@ -4,16 +4,16 @@ import { Breadcrumbs, BreadcrumbItem, Dropdown, DropdownMenu, DropdownTrigger, D
     Divider
  } from '@nextui-org/react'
 import { FaChevronDown } from 'react-icons/fa'
-import FacultyCard from '../components/FacultyCard';
-import CSEFaculties from './FacultyPages/CSEFaculties';
-import ECEFaculties from './FacultyPages/ECEFaculties';
-import EEEFaculties from './FacultyPages/EEEFaculities';
-import MCEFaculties from './FacultyPages/MCEFaculties';
-import CVEFaculties from './FacultyPages/CVEFaculties';
-import APSFaculties from './FacultyPages/APSFaculties';
-import HSSFaculties from './FacultyPages/HSSFaculties';
+import CSETechnical from './TechincalStaffPages/CSETechnical';
+import ECETechnical from './TechincalStaffPages/ECETechincal';
+import EEETechnical from './TechincalStaffPages/EEETechnical';
+import MCETechnical from './TechincalStaffPages/MCETechnical';
+import CVETechnical from './TechincalStaffPages/CVETechnical';
+import APSHSSTechnical from './TechincalStaffPages/APSHSSTechnical';
+import CCCTechnical from './TechincalStaffPages/CCCTechnical';
 
-const FacultyPage = () => {
+
+const TechnicalStaffPage = () => {
 
     const users = [
         {
@@ -227,23 +227,23 @@ const FacultyPage = () => {
                         <Button variant='light'>Home</Button>
                     </BreadcrumbItem>
                     <BreadcrumbItem>
-                        <Button variant='light'>People</Button>
+                        <Button variant="light">People</Button>
                     </BreadcrumbItem>
                     <BreadcrumbItem>
-                          <Dropdown>
+                        <Dropdown>
                             <DropdownTrigger>
                                 <Button variant='light'
-                                endContent={<FaChevronDown className='text-gray-400'/>}>Faculty</Button>
+                                endContent={<FaChevronDown className='text-gray-400'/>}>Technical Staff</Button>
                             </DropdownTrigger>
                             <DropdownMenu aria-label="Routes">
-                                <DropdownItem href="/people/technical">
-                                Technical Staff
+                                <DropdownItem href="/people/faculty">
+                                Faculty
                                 </DropdownItem>
                                 <DropdownItem href="/people/admin">
                                 Administrative Staff
                                 </DropdownItem>
                             </DropdownMenu>
-                          </Dropdown>
+                        </Dropdown>
                     </BreadcrumbItem>
                 </Breadcrumbs>
 
@@ -287,7 +287,7 @@ const FacultyPage = () => {
             </div>
             
             <h1 className='text-6xl text-white p-4 font-bold'>
-                Faculty
+                Technical Staff
             </h1>
         </div>
 
@@ -299,49 +299,49 @@ const FacultyPage = () => {
                     <Tab key="cse" title="Computer Science & Engineering">
                     <Card>
                         <CardBody>
-                          <CSEFaculties/>
+                            <CSETechnical/>
                         </CardBody>
                     </Card>  
                     </Tab>
                     <Tab key="ece" title="Electronics & Communication Engineering">
                     <Card>
                         <CardBody>
-                          <ECEFaculties/>
+                          <ECETechnical/>
                         </CardBody>
                     </Card>  
                     </Tab>
                     <Tab key="eee" title="Electrical & Electronics Engineering">
                     <Card>
                         <CardBody>
-                          <EEEFaculties/>
+                          <EEETechnical/>
                         </CardBody>
                     </Card>  
                     </Tab>
                     <Tab key="mce" title="Mechanical Engineering">
                     <Card>
                         <CardBody>
-                          <MCEFaculties/>
+                          <MCETechnical/>
                         </CardBody>
                     </Card>  
                     </Tab>
                     <Tab key="cve" title="Civil Engineering">
                     <Card>
                         <CardBody>
-                          <CVEFaculties/>
+                          <CVETechnical/>
                         </CardBody>
                     </Card>  
                     </Tab>
                     <Tab key="aps" title="Applied Sciences">
                     <Card>
                         <CardBody>
-                          <APSFaculties/>
+                          <APSHSSTechnical/>
                         </CardBody>
                     </Card>  
                     </Tab>
-                    <Tab key="hss" title="Humanities and Social Sciences">
+                    <Tab key="ccc" title="Humanities and Social Sciences">
                     <Card>
                         <CardBody>
-                          <HSSFaculties/>
+                          <CCCTechnical/>
                         </CardBody>
                     </Card>  
                     </Tab>
@@ -352,4 +352,4 @@ const FacultyPage = () => {
   )
 }
 
-export default FacultyPage
+export default TechnicalStaffPage
