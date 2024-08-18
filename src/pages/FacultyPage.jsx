@@ -6,6 +6,12 @@ import { Breadcrumbs, BreadcrumbItem, Dropdown, DropdownMenu, DropdownTrigger, D
 import { FaChevronDown } from 'react-icons/fa'
 import FacultyCard from '../components/FacultyCard';
 import CSEFaculties from './CSEFaculties';
+import ECEFaculties from './ECEFaculties';
+import EEEFaculties from './EEEFaculities';
+import MCEFaculties from './MCEFaculties';
+import CVEFaculties from './CVEFaculties';
+import APSFaculties from './APSFaculties';
+import HSSFaculties from './HSSFaculties';
 
 const FacultyPage = () => {
 
@@ -289,25 +295,53 @@ const FacultyPage = () => {
             <h2 className='text-3xl'>Academic Departments</h2>
             <Divider className='py-[0.1rem]'/>
             <div className="flex w-full flex-col my-4">
-                <Tabs aria-label="Options" variant='light' color='primary'>
-                    <Tab key="photos" title="Photos">
+                <Tabs aria-label="Options" className='flex justify-center items-center' variant='light' color='primary'>
+                    <Tab key="cse" title="Computer Science & Engineering">
                     <Card>
                         <CardBody>
                           <CSEFaculties/>
                         </CardBody>
                     </Card>  
                     </Tab>
-                    <Tab key="music" title="Music">
+                    <Tab key="ece" title="Electronics & Communication Engineering">
                     <Card>
                         <CardBody>
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          <ECEFaculties/>
                         </CardBody>
                     </Card>  
                     </Tab>
-                    <Tab key="videos" title="Videos">
+                    <Tab key="eee" title="Electrical & Electronics Engineering">
                     <Card>
                         <CardBody>
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                          <EEEFaculties/>
+                        </CardBody>
+                    </Card>  
+                    </Tab>
+                    <Tab key="mce" title="Mechanical Engineering">
+                    <Card>
+                        <CardBody>
+                          <MCEFaculties/>
+                        </CardBody>
+                    </Card>  
+                    </Tab>
+                    <Tab key="cve" title="Civil Engineering">
+                    <Card>
+                        <CardBody>
+                          <CVEFaculties/>
+                        </CardBody>
+                    </Card>  
+                    </Tab>
+                    <Tab key="aps" title="Applied Sciences">
+                    <Card>
+                        <CardBody>
+                          <APSFaculties/>
+                        </CardBody>
+                    </Card>  
+                    </Tab>
+                    <Tab key="hss" title="Humanities and Social Sciences">
+                    <Card>
+                        <CardBody>
+                          <HSSFaculties/>
                         </CardBody>
                     </Card>  
                     </Tab>

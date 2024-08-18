@@ -4,8 +4,8 @@ import { Avatar } from '@nextui-org/react';
 
 const FacultyCard = ({ avatarSrc, name, profession, email, researchArea }) => {
   return (
-    <div className='sm:w-2/3 w-full h-48'>
-        <div className='relative flex items-center justify-center p-8 border-5 border-blue-500 rounded-lg shadow-lg mt-24 bg-blue-100'>
+    <div className='w-full'>
+        <div className='relative flex items-start justify-center p-8 border-5 border-blue-500 rounded-lg shadow-lg mt-24 bg-blue-100 h-[30rem]'>
             {/* Avatar positioned absolutely */}
             <Avatar 
                 src={avatarSrc}
