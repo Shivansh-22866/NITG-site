@@ -100,16 +100,18 @@ const CSEFaculties = () => {
       ];
 
   return (
-    <div className='grid sm:grid-cols-3 grid-cols-1 sm:flex-row gap-8'>
+    <div className='grid sm:grid-cols-3 grid-cols-1 sm:flex-row gap-8 p-4'>
     {professorsData.map((professor, index) => (
-        <FacultyCard
-          key={index}
-          avatarSrc={professor.avatarSrc}
-          name={professor.name}
-          profession={professor.profession}
-          email={professor.email}
-          researchArea={professor.researchArea}
-        />
+        <div key={index} className='flex items-stretch'>
+          <FacultyCard
+            key={index}
+            avatarSrc={professor.avatarSrc}
+            name={professor.name}
+            profession={professor.profession}
+            email={professor.email}
+            researchArea={professor.researchArea}
+          />
+        </div>
       ))}
     </div>
   )

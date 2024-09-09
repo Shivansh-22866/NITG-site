@@ -136,7 +136,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className='bg-blue-700 text-white p-8 grid grid-cols-5 text-xs sm:text-xl text-center'>
+        <div className='bg-blue-700 text-white p-8 sm:grid grid-cols-5 text-xs hidden text-center'>
 
         <div className='flex flex-col items-center justify-center gap-8'>
           <FaGraduationCap className='sm:text-7xl text-2xl'/>

@@ -10,6 +10,7 @@ import MenuNavbar from './components/MenuNavbar.jsx';
 import Footer from './components/Footer.jsx';
 import TechnicalStaffPage from './pages/TechnicalStaffPage.jsx';
 import AdminStaffPage from './pages/AdminStaffPage.jsx';
+import Edownloads from './pages/eDownloads/Edownloads.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/people/faculty" element={<FacultyPage/>} />
           <Route path="/people/technical" element={<TechnicalStaffPage/>} />
           <Route path="/people/admin" element={<AdminStaffPage/>} /> 
+          <Route path="/edownloads" element={<Edownloads/>}/>
         </Routes>
       </BrowserRouter>
       <Footer/>

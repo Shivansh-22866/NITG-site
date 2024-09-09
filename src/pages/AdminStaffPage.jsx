@@ -329,7 +329,7 @@ const AdminStaffPage = () => {
                                 <DropdownItem href="/people/faculty">
                                 Faculty
                                 </DropdownItem>
-                                <DropdownItem href="/people/admin">
+                                <DropdownItem href="/people/technical">
                                 Technical Staff
                                 </DropdownItem>
                             </DropdownMenu>

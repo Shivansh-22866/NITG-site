@@ -1,6 +1,7 @@
-import React from 'react'
 import { FaInstagram, FaYoutube, FaLinkedin, FaAngleRight } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
+import { Link } from 'react-router-dom'
+import { Button } from '@nextui-org/button'
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
             <li><a href='#'className='flex flex-row items-center'><FaAngleRight/>RTI</a></li>
             <li><a href='#'className='flex flex-row items-center'><FaAngleRight/>Login</a></li>
             <li><a href='#'className='flex flex-row items-center'><FaAngleRight/>Feedback</a></li>
-            <li><a href='#'className='flex flex-row items-center'><FaAngleRight/>e-Downloads</a></li>
+            <li><a href='/edownloads'className='flex flex-row items-center'><FaAngleRight/>E-downloads</a></li>
             <li><a href='#'className='flex flex-row items-center'><FaAngleRight/>Students</a></li>
             <li><a href='#'className='flex flex-row items-center'><FaAngleRight/>Academic Calender</a></li>
             <li><a href='#'className='flex flex-row items-center'><FaAngleRight/>Regulation and Curriculum</a></li>
